@@ -1,53 +1,58 @@
 .syntax--source.syntax--css {
+    .syntax--type.syntax--property-name {
+        color: @green;
+    }
 
-  .syntax--punctuation {
-    &.syntax--separator,
-    &.syntax--terminator {
-      color: @syntax-text-color;
+    .syntax--variable.syntax--other {
+        color: @violet;
     }
-    &.syntax--property-list.syntax--begin,
-    &.syntax--property-list.syntax--end {
-      color: @red;
+    .syntax--punctuation {
+        &.syntax--separator,
+        &.syntax--terminator,
+        &.syntax--property-list.syntax--begin,
+        &.syntax--property-list.syntax--end {
+            color: @violet;
+        }
+        &.syntax--section.syntax--function {
+            color: @blue;
+        }
+        &.syntax--definition.syntax--variable {
+            color:@red;
+        }
     }
-    &.syntax--section.syntax--function {
-      color: @cyan;
-    }
-  }
 
-  .syntax--entity.syntax--name {
-    color: @green;
-  }
-  .syntax--attribute-name.syntax--class,
-  .syntax--id {
-    color: @blue;
-  }
-  .syntax--pseudo-element,
-  .syntax--pseudo-class {
-    color: @orange;
-  }
-
-  .syntax--property-value {
-    color: @cyan;
-  }
-  .syntax--constant.syntax--numeric {
-    color: @cyan;
-    .syntax--unit {
-      color: @cyan;
+    .syntax--entity.syntax--name,
+    .syntax--attribute-name.syntax--class,
+    .syntax--id {
+        color: @blue;
     }
-  }
-  .syntax--rgb-value {
-    color: @cyan;
-  }
-  .syntax--support.syntax--constant {
-    color: @cyan;
-    &.syntax--media {
-      color: @red;
+    .syntax--pseudo-element,
+    .syntax--pseudo-class {
+        color: @green;
     }
-  }
 
-  .syntax--keyword.syntax--important {
-    color: @red;
-  }
+    .syntax--property-value {
+        color: @cyan;
+    }
+    .syntax--constant.syntax--numeric {
+        color: @cyan;
+        .syntax--unit {
+            color: @cyan;
+        }
+    }
+    .syntax--rgb-value {
+        color: @orange;
+    }
+    .syntax--support.syntax--constant {
+        color: @orange;
+        &.syntax--media {
+            color: @red;
+        }
+    }
+
+    .syntax--keyword.syntax--important {
+        color: @red;
+    }
 
 }
 
@@ -57,7 +62,7 @@
 
 .syntax--source.syntax--less,
 .syntax--source.syntax--scss {
-  .syntax--keyword.syntax--unit {
-    color: @cyan;
-  }
+    .syntax--keyword.syntax--unit {
+        color: @red;
+    }
 }
