@@ -37,4 +37,29 @@ atom-text-editor {
   .bracket-matcher .region {
     border-color: @magenta;
   }
+
+}
+.list-group, .list-tree {
+    li:not(.list-nested-item),
+    li.list-nested-item {
+        &.status-modified, &.status-modified >.list-item  {
+            color: @syntax-color-modified !important;
+        }
+        &.status-removed, &.status-removed > .list-item {
+            color: @syntax-color-removed !important;
+        }
+        &.status-renamed, &.status-renamed > .list-item {
+            color: @syntax-color-renamed !important;
+        }
+        &.status-added, &.status-added > .list-item {
+            color: @syntax-color-added !important;
+        }
+        &.status-ignored, &.status-ignored > .list-item {
+            color: @light-grey !important;
+        }
+        & > .list-item {
+            color: @light-cyan !important;
+        }
+        color: @light-cyan !important;
+    }
 }

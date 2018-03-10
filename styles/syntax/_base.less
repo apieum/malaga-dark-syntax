@@ -9,31 +9,32 @@
 }
 
 .syntax--string {
-  color: @cyan;
+  color: @blue;
   &.syntax--regexp {
-    color: @red;
+    color: @cyan;
+    font-style: italic;
   }
 }
 
 .syntax--constant {
   &.syntax--numeric {
-    color: @magenta;
+    color: @orange;
   }
   &.syntax--language {
-    color: @yellow;
+    color: @red;
   }
   &.syntax--character,
   &.syntax--other {
-    color: @orange;
+    color: @syntax-color-variable;
   }
 }
 
 .syntax--variable {
-  color: @blue;
+  color: @syntax-color-variable;
 }
 
 .syntax--keyword {
-  color: @green;
+  color: @syntax-color-keyword;
 }
 
 .syntax--storage {
@@ -45,7 +46,7 @@
     &.syntax--class,
     &.syntax--type,
     &.syntax--function {
-      color: @blue;
+      color: @syntax-color-entity;
     }
   }
   &.syntax--other.syntax--attribute-name {
@@ -55,20 +56,20 @@
 
 .syntax--support {
   &.syntax--function {
-    color: @blue;
+    color: @syntax-color-entity;
     &.syntax--builtin {
-      color: @green;
+      color: @syntax-color-entity;
     }
   }
   &.syntax--type,
   &.syntax--class {
-    color: @green;
+    color: @syntax-color-entity;
   }
 }
 
 .syntax--tag {
   &.syntax--entity.syntax--name {
-    color: @blue;
+    color: @syntax-color-entity;
   }
   &.syntax--punctuation.syntax--definition {
     &.syntax--html,
