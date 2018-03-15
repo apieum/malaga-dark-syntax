@@ -7,9 +7,12 @@ atom-text-editor {
     background-color: @syntax-gutter-background-color;
 
     .line-number {
-      &.cursor-line {
-        background-color: @syntax-gutter-background-color-selected;
-      }
+        color: @text-color-subtle;
+        font-weight: bold;
+        &.cursor-line {
+            background-color: @syntax-gutter-background-color-selected;
+            color: @turquoise;
+        }
     }
   }
 
